@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__) 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://phuongvv:Phuongvv@123@/hotel_db?host=/cloudsql/mineral-style-252402:us-central1:hotel-db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://user:password/hotel_db?host=/cloudsql/mineral-style-252402:us-central1:hotel-db'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
